@@ -1,5 +1,5 @@
 # PW-Recruiter
-Python recruitment bot for Politics and War
+Recruitment bot for Politics and War. Requires python and the requests package.
 
 Calls the nations API and pulls the smallest 500 nations that aren't in an alliance and are less than two days inactive. This approxomates to new nations, as the API does not return nation age. It then filters out any nation ID's that have already been messaged, and sends them your recruitment message. It will print status messages to the terminal so you can follow what it's doing. 
 
