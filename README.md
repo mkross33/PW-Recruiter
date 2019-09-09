@@ -6,6 +6,7 @@ Calls the nations API and pulls the smallest 500 nations that aren't in an allia
 You must edit message_info.py with a text editor. Include your details in the appropriate places between the quotation marks (API key, user credentials, subject, body). Subject cannot be more than 50 characters per PW rules. [[ruler]] and [[nation]] can be used as standins for a players ruler and nation name, which will be swapped in when sending the message. 
 
 Windows Usage: run message.bat to launch the script. 
+
 Linux: python recruit.py 
 
 I recommend using Cron/Task Scheduler to have it run daily.
