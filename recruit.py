@@ -12,6 +12,10 @@ header = {'User-Agent': 'Mozilla/5.0'}
 
 def main():
     print('Starting script')
+	# check if the subject is too long. PW will not accept more than 50 characters. 
+	if len(subject) > 50:
+		print("Subject is too long. Must not be more than 50 characters.")
+		break
     # DB Connection
     conn = sqlite3.connect('logs.db')
     with conn:
@@ -37,7 +41,7 @@ def get_noobs(key):
     nations = data['nations']
     print('API Loaded')
     print('Finding new nations...')
-    # list to store the 200 smallest active nations
+    # list to store the 500 smallest active nations
     noobs = []
     # counter
     counter = 0
