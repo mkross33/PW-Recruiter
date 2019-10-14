@@ -1,9 +1,9 @@
 # Your API Key
-key = "015b674564893e"
+key = ""
 
 # Your PW Login Credentials
-user = "mkross33@gmail.com"
-password = "lobstermanbad"
+user = ""
+password = ""
 
 # API Key and Password should be pasted directly between those quotes. Don't add any spaces, it will confuse PW.
 
