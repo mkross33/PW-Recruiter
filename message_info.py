@@ -8,8 +8,8 @@ user = ""
 password = ""
 
 # Use [[ruler]] and [[nation]] in subject/body to have the bot enter in the recipients username or nation id
-
 # subject should not exceed 50 characters
 subject = ""
 
 body = """ """
+
