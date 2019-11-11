@@ -11,8 +11,8 @@ def get_nations(key):
     response = urlopen(req).read()
     data = json.loads(response)
     # Handle any errors reported by the PW API
-    if data['success'] == 'false':
-        print(data['general_message'])
+    if not data['success']:
+        raise SystemExit("PW API Error : " + data['general_message'])
     nations = data['nations']
     print('API Loaded')
     return nations
@@ -91,4 +91,3 @@ def send(messenger, message, contacts, conn):
             s.post('https://politicsandwar.com/inbox/message/', data=payload, headers={'User-Agent': 'Mozilla/5.0'})
             c.execute('''INSERT INTO logs(nation_id) VALUES(?)''', (contact['nationid'],))
         c.close()
-
