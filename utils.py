@@ -76,6 +76,7 @@ def send(messenger, message, contacts, conn):
 
         c = conn.cursor()
         # send and log messages
+        print('Sending messages...')
         for contact in contacts:
             body = personalize(message['body'], contact)
             subject = personalize(message['subject'], contact)
