@@ -29,7 +29,7 @@ def get_noobs(nations):
         # I consider nations inactive and not worth messaging if it has been more than 2 days (1500 minutes using the
         # API's units) since they last logged in. Feel free to change to suit your alliance's standards.
         inactive_threshold = 1500
-        if (nation['vacmode'] == 0) and (nation['minutessinceactive'] < inactive):
+        if (nation['vacmode'] == 0) and (nation['minutessinceactive'] < inactive_threshold):
             noobs_found += 1
             noobs.append(nation)
         if noobs_found >= 500:
