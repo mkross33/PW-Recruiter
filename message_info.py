@@ -11,7 +11,7 @@ password = ""
 alliance_id = ""
 
 
-# Use [[ruler]] and [[nation]] in subject/body to have the bot enter in the recipients username or nation id
+# Use [[ruler]] and [[nation]] in subject/body to have the bot enter in the recipients leader or nation name
 # subject should not exceed 50 characters
 
 # Recruitment Message Details
