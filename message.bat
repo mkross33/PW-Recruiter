@@ -1,2 +1,2 @@
-python recruit.py
+python recruiter.py
 @pause
