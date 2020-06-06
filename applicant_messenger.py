@@ -24,7 +24,7 @@ def message_applicants(key):
             c = conn.cursor()
             for applicant in applicants:
                 # Skip if message log exists
-                log = c.execute('''SELECT nation_id FROM applicants WHERE nation_id=?''', (applicant['nation_id'],)).fetchone()
+                log = c.execute('''SELECT nation_id FROM applicants WHERE nation_id=?''', (applicant['nationid'],)).fetchone()
                 if log:
                     continue
                 send(applicant, message, s)
